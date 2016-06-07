@@ -40,28 +40,28 @@ function highlight(keywords, text) {
 }
 
 // keyword highlight
-//$(function(){
-//    var keywords = $('.search_keywords').val();
-//    if(keywords){
-//        var tilte = $('.result_title');
-//        for(var i=0;i < tilte.length;i++){
-//            var _tilte = $(tilte[i]).html();
-//            $(tilte[i]).html(highlight(keywords,_tilte));
-//        }
-//        var content = $('.result_content');
-//        for(var i=0;i < content.length;i++){
-//            var _conten = $(content[i]).html();
-//            $(content[i]).html(highlight(keywords,_conten));
-//        }
-//        var category = $('.result_category');
-//        for(var i=0;i < category.length;i++){
-//            var _category = $(category[i]).html();
-//            $(category[i]).html(highlight(keywords,_category));
-//        }
-//        var tag = $('.result_tag');
-//        for(var i=0;i < tag.length;i++){
-//            var _tag = $(tag[i]).html();
-//            $(tag[i]).html(highlight(keywords,_tag));
-//        }
-//    }
-//});
+$(function(){
+    var keywords = $('.search_keywords').val();
+    if(keywords){
+        var tilte = $('.result_title');
+        for(var i=0;i < tilte.length;i++){
+            var _tilte = $(tilte[i]).html();
+            $(tilte[i]).html(highlight(keywords,_tilte));
+        }
+        var content = $('.result_content');
+        for(var i=0;i < content.length;i++){
+            var _conten = $(content[i]).html();
+            $(content[i]).html(highlight(keywords,_conten));
+        }
+        var category = $('.result_category');
+        for(var i=0;i < category.length;i++){
+            var _category = $(category[i]).html();
+            $(category[i]).html(highlight(keywords,_category));
+        }
+        var tag = $('.result_tag');
+        for(var i=0;i < tag.length;i++){
+            var _tag = $(tag[i]).html();
+            $(tag[i]).html(highlight(keywords,_tag));
+        }
+    }
+});
